@@ -1,0 +1,29 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 99, in script
+    menu:
+  File "game/script.rpy", line 104, in <module>
+    "Fly above." if drank_tea:
+NameError: name 'drank_tea' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 99, in script
+    menu:
+  File "C:\Users\Scythe\Desktop\renpy-6.99.12.4-sdk\renpy\ast.py", line 1459, in execute
+    choice = renpy.exports.menu(choices, self.set)
+  File "C:\Users\Scythe\Desktop\renpy-6.99.12.4-sdk\renpy\exports.py", line 828, in menu
+    if renpy.python.py_eval(condition) ]
+  File "C:\Users\Scythe\Desktop\renpy-6.99.12.4-sdk\renpy\python.py", line 1749, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\Scythe\Desktop\renpy-6.99.12.4-sdk\renpy\python.py", line 1743, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 104, in <module>
+    "Fly above." if drank_tea:
+NameError: name 'drank_tea' is not defined
+
+Windows-7-6.1.7601-SP1
+Ren'Py 6.99.12.4.2187
+templatetesting 1.0
